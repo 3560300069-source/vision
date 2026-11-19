@@ -1,0 +1,13 @@
+﻿# Visual Studio
+.vs/
+bin/
+obj/
+*.user
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated output (rebuildable, too large for git)
+results/
+pairs/

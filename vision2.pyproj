@@ -1,0 +1,54 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B7A2D4E6-1C3F-4A8B-9D2E-5F6A7B8C9D01}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>run_pair.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>vision2</Name>
+    <RootNamespace>vision2</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.14</InterpreterId>
+    <InterpreterVersion>3.14</InterpreterVersion>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="__init__.py" />
+    <Compile Include="batch_pairs.py" />
+    <Compile Include="calibrate.py" />
+    <Compile Include="calibrate_new.py" />
+    <Compile Include="constructure.py" />
+    <Compile Include="constructure3d.py" />
+    <Compile Include="constructure3d_new.py" />
+    <Compile Include="disparity.py" />
+    <Compile Include="fuse_clouds.py" />
+    <Compile Include="line_test.py" />
+    <Compile Include="linetest.py" />
+    <Compile Include="point.py" />
+    <Compile Include="run_all.py" />
+    <Compile Include="view_cloud.py" />
+    <Compile Include="show_pair.py" />
+    <Compile Include="show_util.py" />
+    <Compile Include="run_pair.py" />
+    <Compile Include="measure_pair.py" />
+    <Compile Include="stereo_calib_pairs.py" />
+    <Compile Include="stereo_capture.py" />
+    <Compile Include="stereo_capture_run.py" />
+    <Compile Include="verify_calibration.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.14" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
